@@ -7,7 +7,8 @@ public class Main {
         double consumption = in.nextDouble();
         System.out.print("The remaining fuel in the tank liters : ");
         double remaining = in.nextDouble();
-        System.out.print("Fuel left for  " + remaining / consumption * 100 + " km");
+        int result = (int) (remaining / consumption * 100);
+        System.out.print("Fuel left for  " + result + " km");
         in.close();
     }
 }
